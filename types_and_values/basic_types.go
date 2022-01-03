@@ -28,5 +28,13 @@ func main() {
 
 	fmt.Printf("s1 = %q\n", s1)
 
-	fmt.Println("bools:", b1, b2)
+	fmt.Println("Bool value b1 and b2:", b1, b2)
+	// swap values
+	b1, b2 = b2, b1
+	fmt.Println("Swapped b1 and b2:", b1, b2)
+
+	{
+		var s1 = true
+		fmt.Println("Redeclaration of s1 shadows previous declaration:", s1)
+	}
 }
